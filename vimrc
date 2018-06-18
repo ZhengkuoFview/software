@@ -66,7 +66,7 @@ au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
 set encoding=utf-8
 
-"python with virtualenv support
+" python with virtualenv support
 py << EOF
 import os
 import sys
@@ -79,6 +79,7 @@ EOF
 let python_highlight_all=1
 syntax on
 
+" color style
 if has('gui_running')
   set background=dark
   colorscheme solarized
